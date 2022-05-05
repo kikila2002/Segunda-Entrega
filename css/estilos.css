@@ -3,6 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+.fondom {
+    background-image: url(../imagenes/AQUI.jpg) ;
+    background-position: center;
+}
+.textol {
+    color: yellow;
+}
+
+
+.enlasee a {
+    color: white;
+}
+
+.enlasee a:link {
+    text-decoration: none;
+    
+}
+.enlasee a:hover::after {
+    
+    content: '👈';
+    margin-left: 5px;
+    font-size: 4rem;
+    
+}.enlasee a:hover::before {
+    
+    content: '👉';
+    margin-left: 5px;
+    font-size: 4rem;
+}
 .color {
     color: wheat;
 }
@@ -100,7 +131,13 @@ footer {
     justify-content: center;
     align-items: center;
     color: yellow;
-    background-image: url(../imagenes/AQUI.jpg) ;
-    background-position: center;
+    
 
+}
+@media (max-width: 991px) {
+    .li-hover:hover::before {
+    
+        display: none;
+    
+    }
 }
